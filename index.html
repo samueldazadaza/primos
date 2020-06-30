@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numeros primos</title>
+    <style>
+        .caja1{
+            color: white;
+            background: gray;
+            border-radius: 10px;
+            width: 5%;
+            text-align: center; 
+        }
+        .caja2{
+            color: white;
+            background: blue;
+            border-radius: 10px;
+            width: 5%;
+            text-align: center;
+            }
+        .caja3{
+            color: white;
+            background: red;
+            border-radius: 10px;
+            width: 5%;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        
+        var numbers = 0
+        for (numbers = 1; numbers <=100; numbers++){
+            if(numbers % 3 == 0 && numbers % 5 == 0){
+                document.write("<div class=caja3>fizzBuzz</div>")
+            }
+            else if (numbers % 3 == 0) {
+                document.write("<div class=caja1> fizz </div>")
+            }
+            else if (numbers % 5 == 0) {
+                document.write("<div class=caja2> buzz </div>")
+            }
+            else {
+                document.write(numbers, "<br>")
+            innerHTML = (numbers);
+            }           
+        }
+    </script>
+</body>
+</html>
